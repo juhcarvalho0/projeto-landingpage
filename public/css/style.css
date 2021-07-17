@@ -1,0 +1,287 @@
+body,main,div,header,figure,h3, mark, style, img, h2, em
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Open Sans",sans-serif;
+    background-image: url(../imagens/testebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    max-width: 800px;
+    width: 80%;
+    margin: 0px auto;
+}
+
+body .home{
+    margin: 0 auto;
+    text-align: center  ;
+}
+
+
+
+/* inicio: componente "ofertas" */
+
+main .ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .texto-ofertas .texto-oferta{
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 6px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;   
+    background-color: rgb(255, 145, 0);
+    border-radius: 10px;
+}
+
+main .ofertas .oferta {
+    background-color: white;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;  
+    padding: 25px; 
+    border-radius: 10px;
+    margin-top: 10px; 
+}
+main .ofertas .oferta:hover{
+    box-shadow: 0 0 5px 10px rgba(219, 210, 127, 0.5);    
+}
+
+main .ofertas .oferta h2 {
+    color: rgb(17, 0, 255);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+main .ofertas .oferta p {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+main .ofertas .oferta h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1px;
+    text-decoration: line-through;
+    margin: 0 auto;
+}
+
+main .ofertas .oferta h6 {
+    padding: 0 30px 15px 0;
+    font-size: 10px;
+    margin: 0 auto;
+    text-align: end;
+}
+
+.ofertas .oferta em {
+    font-size: 15px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.ofertas .oferta img{
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.ofertas:hover{
+    cursor: pointer;   
+}
+/* fim: componente "ofertas" */
+
+
+
+/* inicio: componente "depoimento" */
+
+main .depoimento-produto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;   
+}
+
+main .depoimento-produto img{
+    width: 50px;
+    border-radius: 100px;
+    background-color: rgb(235, 235, 235);
+    padding: 3px;
+}
+
+main .depoimento-produto em{
+    font-weight: bold;
+}
+
+main .depoimento-produto .title-depoimento{
+    padding: 1px;
+    margin-top: 30px;
+    margin-bottom: 6px;
+    text-align: center;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;   
+    background-color: rgb(255, 145, 0);
+    border-radius: 10px;
+}
+
+main .depoimento-produto .depoimentos{
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    max-width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+   
+}
+/* fim: componente "depoimento" */
+
+
+
+/* inicio: componente "subscribe" */
+
+main .subscribe-contain {
+    background-color: rgb(255, 255, 255);
+    color:white;
+    padding: 16px;
+    margin-top: 30px;
+    text-align: center;   
+    border-radius: 2px;       
+}
+
+main .subscribe-contain .subscribe1{
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+main .subscribe-contain .subscribe1 h4{
+    margin-top: 5px;
+    color: white;
+}
+
+main .subscribe-contain .subscribe1 form{
+    margin-top: -10px;    
+}
+
+main .subscribe-contain .subscribe1 form input{
+    border-radius: 5px;
+    width: 50%;
+    padding: 7px; 
+    font-size: 20px;
+    border: 1px solid rgb(255, 255, 255);       
+}
+
+main .subscribe-contain .subscribe1 form button{
+    border-radius: 5px;
+    padding: 6px;
+    border: 2px solid rgb(255, 255, 255);
+    width: 30%;
+    font-weight: bold;
+    background-color: rgb(255, 145, 0);
+    font-size: 20px;
+}
+
+main .subscribe-contain .subscribe1 form button:hover {
+    background-color: rgb(231, 78, 31);
+    cursor: pointer;
+    color: white;
+}
+ /* fim: componente "subscribe" */
+
+
+
+
+ /* inicio: componente "footer" */
+body footer {
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+/* fim: componente "footer" */
+
+
+
+@media only screen and (max-width: 530px)
+
+{
+    .home img{
+        width: 100%;
+    }
+    .ofertas{
+        margin: 0 2px;
+    }
+
+    .ofertas .oferta{
+        display: block;
+        max-width: none;
+        margin: 0 0 10px 0;
+    }
+
+    main .depoimento-produto .title-depoimento{
+        width: 100%;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    main .depoimento-produto .depoimentos{
+        width: 100%;
+        display: table;
+        height: 10px;
+        font-size: 10px;
+    }
+
+    main .depoimento-produto .depoimentos img{
+        width: 20%;
+    }
+    main .subscribe{
+        margin: 5px;
+    }
+    main .subscribe .subscribe1{
+        font-size: 12px;
+    }
+
+    main .subscribe-contain .subscribe1 form input{
+        font-size: 10px;
+        width: 80%;
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    main .subscribe-contain .subscribe1 form button{
+        font-size: 10px;
+        width: 40%;
+        text-align: center;
+        
+    }
+    
+    footer{
+        max-width: 100%;
+        width: 100%;
+         font-size: 10px;
+    }
+
+}
